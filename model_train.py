@@ -10,7 +10,7 @@ def train_model():
     print("Loading MNIST dataset... (This might take a moment)")
     # Using version 1 of MNIST
     # As_frame=False to get numpy arrays directly
-    mnist = fetch_openml('mnist_784', version=1, as_frame=False)
+    mnist = fetch_openml('mnist_784', version=1, as_frame=False,parser='liac-arff')
     
     X, y = mnist.data, mnist.target
     
